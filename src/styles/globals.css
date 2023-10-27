@@ -99,7 +99,14 @@ a {
   color: inherit;
   text-decoration: none;
 }
-
+button{
+  width: 30px;
+  height: 30px;
+}
+input{
+  width: 200px;
+  height: 40px;
+}
 @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;
