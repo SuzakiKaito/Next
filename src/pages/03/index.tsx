@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import {Header} from "@/components/header"
+
 
 export default function calculator(){
   const [input, setInput] = useState(''); 
@@ -24,7 +26,7 @@ export default function calculator(){
 
   return(
     <>
-    <h1>電卓</h1>
+    <Header title="oreo"/>
       <div>
         <div className="calculator">
           <div className="display">
@@ -44,7 +46,7 @@ export default function calculator(){
             <button onClick={() => bClick('+')}>+</button>
             <button onClick={() => bClick('-')}>-</button>
             <button onClick={() => bClick('*')}>*</button>
-            <button onClick={() => bClick('/')} >/</button>
+            <button onClick={() => bClick('/')}>/</button>
             <button onClick={() => bClick('.')}>.</button>
             <button onClick={() => bClick('=')}>=</button>
             <button onClick={() => bClick('C')}>C</button>
